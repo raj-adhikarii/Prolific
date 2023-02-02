@@ -20,6 +20,22 @@
             font-weight: 700;
         }
 
+        a{
+            color: #f98700;
+        }
+        button a{
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        button a:hover{
+            color: #ffffff;
+        }
+
+        /* .clr-accent a{
+            color: #f98700;
+        } */
+
         .button.is-accent {
             background-color: #f98700;
             border-color: transparent;
@@ -46,7 +62,7 @@
 
         p{
             font-family: 'Manrope', sans-serif;
-            font-size: .9rem;
+            line-height: 1.7rem;
         }
 
         span {
@@ -58,6 +74,14 @@
         .icon-text span {
             font-size: 16px;
         }
+
+        .hbr.is-3 {
+            background: #eff3ff;
+            height: 1px;
+            max-width: 580px;
+            border-radius: 30px;
+            margin-top: -10px;
+        }
         /*global style end */
         .has-background-accent{
             background-color: #04091d;
@@ -66,6 +90,13 @@
         .has-background-accent-inverse{
             background-color: #f98700;
             border-radius: 0.25rem;
+        }
+
+        .b-radius{
+            padding: 10px; 
+            border-radius: 6px;
+            height:3.5rem;
+            width:3.5rem;
         }
     </style>
 </head>
@@ -129,16 +160,18 @@
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
                 </div>
         
-            <div class="navbar-end">
-                <div class="navbar-item">
-                <p> <button class="button is-accent">
-                    <span class="icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </span>
-                    <span>Get Quote</span>
-                  </button></p>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                    <p> <button class="button is-accent">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </span>
+                            <span>Get Quote</span>
+                        </a>
+                    </button></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </div>
@@ -172,22 +205,26 @@
                     <div class="column is-6">
                         <span class="tag is-warning is-light">About Us</span>
                         <h2 class="block mt-4 title is-2">
-                            Our Best Work
+                            Maximize your online reach and presence with prolific it solutions
                         </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                        <p>Prolific IT Solutions was established in 2010 A.D. Since 2010, Prolific IT Solutions has been successful in developing a team of experienced and qualified IT professionals. Each professional is dedicated to delivering the utmost results for our target customers. 
+                        </p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
+                        <p>Prolific IT Solution is a top leading one-stop destination for providing every kind of digital solution. We are renowned for maintaining clarity and transparency about the project from beginning to its end. 
+                        </p>
+                        <br>
+                        <p>With the aim of prospering as one of the most trusted and reputable Digital Marketing Companies in Nepal, Prolific IT Solutions have made a perception of sharing our knowledge and experiences among several organizations and people by conducting informational events, exhibitions, and training. </p>
 
                         <div class="columns pt-5">
                             <div class="column is-6">
                                 <div class="column px-0">
                                     <div class="icon-text is-align-items-center">
                                         <span class="icon is-large">
-                                            <span class="fa-stack fa-lg">
+                                            <span class="fa-stack fa-lg fas fa-2x">
                                                 <i class="fas fa-spa fa-stack-1x has-background-link-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
+                                        <span>Result oriented</span>
                                       </div>
                                   </div>
                                   <div class="column px-0">
@@ -197,7 +234,7 @@
                                               <i class="fas fa-project-diagram fa-stack-1x has-background-info-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor adipisicing elit</span>
+                                        <span>Real-time reports</span>
                                       </div>
                                   </div>
                             </div> 
@@ -209,7 +246,7 @@
                                               <i class="fas fa-laptop fa-stack-1x has-background-success-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
+                                        <span>Innovative tools and solutions</span>
                                       </div>
                                   </div>
                                   <div class="column px-0">
@@ -219,7 +256,7 @@
                                               <i class="fas fa-tasks fa-stack-1x has-background-warning-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
+                                        <span>Reasonable rates</span>
                                       </div>
                                   </div>
                             </div> 
@@ -233,49 +270,52 @@
         <!-- About middle dark -->
         <section class="section has-background-accent">
             <div class="container">
-                <div class="column is-7 mx-auto has-text-centered">
+                <div class="column mx-auto has-text-centered">
                     <span class="tag is-warning is-light">About Us</span>
-                        <h2 class="block mt-4 title is-2 has-text-white">
-                            Our Best Work
+                        <h2 class="block mt-4 mx-auto title is-2 has-text-white" style="max-width: 600px;">
+                            We aim to assist every small and big business to boost their leads
                         </h2>
-                        <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint qui cumque nihil, labore odit quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quo ipsum modi hic rerum veniam?</p>
+                        <p class="has-text-white mx-auto" style="max-width: 768px;"> We develop a brand online by promoting their businesses on the web and creating digital marketing campaigns for their firm. 
+                        </p>
                     <div class="columns mt-5">
                         <div class="column m-2 py-5 has-background-accent-inverse">
                             <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-poll fas fa-2x"></i>
                             </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
+                            <h3 class="title is-4 mb-4 mt-3 has-text-white">Result oriented</h3>
+                            <p class="has-text-white">Understand the needs of our clients and aim to reach our client's specific business objectives. Increased Traffic and Engagement on your outlet followed with the best result-driven strategies. </p>
                         </div>
                         <div class="column m-2 py-5 has-background-accent-inverse">
                             <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
+                                <i class="far fa-hourglass fas fa-2x"></i>
                             </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
+                            <h3 class="title is-4 mb-4 mt-3 has-text-white">Real-time reports</h3>
+                            <p class="has-text-white">Know how digital performance affects your business. Provide real-time reports with hard data monthly to meet the results. Seeing the reports, you can see the improvements and changes due to digital marketing solutions. </p>
                         </div>
                         <div class="column m-2 py-5 has-background-accent-inverse">
                             <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-tools fas fa-2x"></i>
                             </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
+                            <h3 class="title is-4 mb-4 mt-3 has-text-white">Innovative tools and solutions</h3>
+                            <p class="has-text-white">At Prolific IT Solutions, we understand the interconnection between the brand and its relevant audience. We constantly provide solutions to address digital marketing challenges with the use of innovative tools and techniques that enable us to enhance your digital marketing objectives.</p>
                         </div>
                         <div class="column m-2 py-5 has-background-accent-inverse">
                             <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-money-check-alt fas fa-2x"></i>
                             </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
+                            <h3 class="title is-4 mb-4 mt-3 has-text-white">Reasonable rates</h3>
+                            <p class="has-text-white">We help you reach your end goals at minimal costs and optimize your digital strategy in order to streamline your expenses. This benefits you with the best return on your investment.</p>
                         </div>
                     </div>
 
                     <div class="columns has-text-left is-vcentered">
                         <div class="column ">
                             <h2 class="block mt-4 title is-4 has-text-white">
-                                Our best work Lorem ipsum dolor sit amet
+                               Why work with us?
                             </h2>
-                            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint qui cumque nihil, labore odit quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quo ipsum modi hic rerum veniam?</p>
+                            <p class="has-text-white">We, at Prolific IT Solutions, a leading digital marketing company in Nepal, prepare real-time reports, develop close connections with social media, and use new and latest technologies in order to spot opportunities. We aim to reach new audiences by delivering excellent ROI followed by our digital strategies.</p>
+                            <br>
+                            <p class="has-text-white">With an aim to succeed for a better future, we step forward with campaigns, expertise, all time ready customer support, and ensure we don't leave any stone unturned to reach the goals and come up with newer ideas. We are familiar with all the criteria of a digital marketing company and will not miss a single opportunity to bring it all together into one.</p>
                         </div>
                         <div class="column">
                             <img src="/img/about-middle.svg" alt="">
@@ -291,13 +331,12 @@
             <div class="container">
                 <div class="columns is-vcentered">
                     <div class="column">
-                        <span class="tag is-warning is-light">Our Mission</span>
+                        <span class="tag is-warning is-light">Mission</span>
                         <h2 class="block mt-4 title is-2">
                            Our mission statement
                         </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                        <p>Our mission is to boost and promote the digital performance of every small and large business and emerge as a leading digital marketing company in Nepal. We offer cost-effective and efficient advertising tools, techniques, and therefore, results to enrich the Digital Marketing experience for people.</p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
 
                         <div class="icon-text pt-5">
                             <span class="icon has-text-info">
@@ -339,13 +378,12 @@
                     </div>
 
                     <div class="column">
-                        <span class="tag is-warning is-light">Our Vision</span>
+                        <span class="tag is-warning is-light">Vision</span>
                         <h2 class="block mt-4 title is-2">
                            Our vision
                         </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                        <p>We aim to run the core essence of digital marketing to be recognized nationwide as the most trusted, reputable, and reliable Digital Marketing Company in Nepal. We passionately develop healthy relationships with our customers in order to facilitate result-oriented digital marketing services. </p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
 
                         <div class="icon-text pt-5">
                             <span class="icon has-text-info">
@@ -373,15 +411,16 @@
             </div>
         </section>
         <!-- Vission emd -->
-        <!-- portfolio -->
+
+        <!-- stats -->
         <section class="section">
             <div class="container">
                 <div class="column is-7 mx-auto has-text-centered">
-                    <span class="tag is-warning is-light">Portfolio</span>
+                    <span class="tag is-warning is-light">Stats</span>
                     <h2 class="block mt-4 title is-2">
-                        Our best work
+                        Prolific IT Solutions
                     </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
+                    <p class="pb-5">Prolific IT Solutions is a leading digital marketing company in Nepal that provides solutions to address digital marketing challenges and offers highly optimized digital marketing services such as digital marketing, SEO, web design, graphics design, and web development to help you boost your online presence!</p>
                 </div>
                 <div class="col pb-4">
                     <nav class="level">
@@ -400,7 +439,7 @@
                         <div class="level-item has-text-centered">
                             <div>
                                 <p class="title">200+</p>
-                                <p class="heading mt-5">Happy client</p>
+                                <p class="heading mt-5">Happy clients</p>
                             </div>
                         </div>
                         <div class="level-item has-text-centered">
@@ -413,7 +452,7 @@
                 </div>
             </div>
         </section>
-        <!-- portfolio end -->
+        <!-- stats end -->
 
         <!-- Team -->
         <section class="section" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
@@ -538,20 +577,24 @@
                     </h3>
                     <div class="buttons is-justify-content-center mt-5">
                         <button class="button is-accent">
-                            <span class="icon"><i class="fas fa-phone"></i></span>
-                            <span>Contact Us</span>
+                            <a href="/contact.html">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <span>Contact Us</span>
+                            </a>
                         </button>
 
                         <button class="button is-accent  is-outlined">
-                            <span class="icon"> <i class="fas fa-pen-nib"></i></span>
-                            <span>Get Quote</span>
+                            <a href="/contact.html">
+                                <span class="icon"> <i class="fas fa-pen-nib"></i></span>
+                                <span>Get Quote</span>
+                            </a>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- CTA end -->
     </main>
-    <!-- CTA end -->
 
     <!-- footer Start -->
     <footer class="footer pt-6  px-0 pb-0 is-2-mobile" style="background-color: #17161a;">

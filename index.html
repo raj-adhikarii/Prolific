@@ -20,6 +20,22 @@
             font-weight: 700;
         }
 
+        a{
+            color: #f98700;
+        }
+        button a{
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        button a:hover{
+            color: #ffffff;
+        }
+
+        /* .clr-accent a{
+            color: #f98700;
+        } */
+
         .button.is-accent {
             background-color: #f98700;
             border-color: transparent;
@@ -46,7 +62,7 @@
 
         p{
             font-family: 'Manrope', sans-serif;
-            font-size: .9rem;
+            line-height: 1.7rem;
         }
 
         span {
@@ -57,6 +73,14 @@
 
         .icon-text span {
             font-size: 16px;
+        }
+
+        .hbr.is-3 {
+            background: #eff3ff;
+            height: 1px;
+            max-width: 580px;
+            border-radius: 30px;
+            margin-top: -10px;
         }
     </style>
 </head>
@@ -118,16 +142,18 @@
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
                 </div>
         
-            <div class="navbar-end">
-                <div class="navbar-item">
-                <p> <button class="button is-accent">
-                    <span class="icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </span>
-                    <span>Get Quote</span>
-                  </button></p>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                    <p> <button class="button is-accent">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </span>
+                            <span>Get Quote</span>
+                        </a>
+                    </button></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </div>
@@ -149,13 +175,17 @@
 
                             <div class="buttons mt-5">
                                 <button class="button is-accent">
-                                    <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
-                                    <span>Our Services</span>
+                                    <a href="/service.html">
+                                        <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                                        <span>Our Services</span>
+                                    </a>
                                 </button>
 
-                                <button class="button is-accent  is-outlined">
-                                    <span class="icon"><i class="fas fa-feather-alt"></i></span>
-                                    <span>View Portfolio</span>
+                                <button class="button is-accent  is-outlined clr-accent">
+                                    <a href="#">
+                                        <span class="icon"><i class="fas fa-feather-alt"></i></span>
+                                        <span>View Portfolio</span>
+                                    </a>
                                 </button>
                               </div>
                         </div>
@@ -182,7 +212,7 @@
                     <div class="column"><img src="img/sgs.svg" alt=""></div>
                     <div class="column"><img src="img/flower.svg" alt=""></div>
                 </div>
-                <hr class="navbar-divider">
+                <div class="hbr mx-auto is-3"></div>
             </div>
         </section>
         <!-- logo sec end -->
@@ -197,11 +227,13 @@
                     <div class="column is-6">
                         <span class="tag is-warning is-light">About Us</span>
                         <h2 class="block mt-4 title is-2">
-                            Our best work
+                            Maximize your online reach and presence with prolific it solutions
                         </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                        <p>Prolific IT Solutions was established in 2010 A.D. Since 2010, Prolific IT Solutions has been successful in developing a team of experienced and qualified IT professionals. Each professional is dedicated to delivering the utmost results for our target customers. 
+                        </p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
+                        <p>Prolific IT Solution is a top leading one-stop destination for providing every kind of digital solution. We are renowned for maintaining clarity and transparency about the project from beginning to its end. 
+                        </p>
 
                         <div class="columns pt-5">
                             <div class="column is-6">
@@ -212,7 +244,7 @@
                                                 <i class="fas fa-spa fa-stack-1x has-background-link-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
+                                        <span>Result oriented</span>
                                       </div>
                                   </div>
                                   <div class="column px-0">
@@ -222,7 +254,7 @@
                                               <i class="fas fa-project-diagram fa-stack-1x has-background-info-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor adipisicing elit</span>
+                                        <span>Real-time reports</span>
                                       </div>
                                   </div>
                             </div> 
@@ -234,7 +266,7 @@
                                               <i class="fas fa-laptop fa-stack-1x has-background-success-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
+                                        <span>Innovative tools and solutions</span>
                                       </div>
                                   </div>
                                   <div class="column px-0">
@@ -244,11 +276,17 @@
                                               <i class="fas fa-tasks fa-stack-1x has-background-warning-light"></i>
                                             </span>
                                           </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
+                                        <span>Reasonable rates</span>
                                       </div>
                                   </div>
                             </div> 
                         </div>
+
+                        <button class="button is-accent">
+                            <a href="/about.html"> <span class="icon"><i class="fas fa-angle-double-right"></i></span>
+                                <span>About Us</span>
+                            </a>
+                        </button>
                     </div>   
                 </div>
             </div>
@@ -256,14 +294,14 @@
         <!-- About end -->
 
         <!-- portfolio -->
-        <section class="section" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);">
+        <section class="section has-text-centered" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);">
             <div class="container">
                 <div class="column is-7 mx-auto has-text-centered">
                     <span class="tag is-warning is-light">Portfolio</span>
                     <h2 class="block mt-4 title is-2">
-                        Our best work
+                        Prolific IT solution is a top leading one-stop destination
                     </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
+                    <p class="pb-5">We are providing every kind of digital solution. We are renowned for maintaining clarity and transparency about the project from beginning to its end. </p>
                 </div>
                 <div class="columns">
                     <div class="column">
@@ -273,6 +311,16 @@
                                     <img style="object-fit: cover;" src="https://unitedcarremoval.com.au/wp-content/uploads/2023/01/hero-banner.png" alt="Placeholder image">
                               </figure>
                             </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a href="https://unitedcarremoval.com.au" target="_blank">
+                                    <span class="icon-text">
+                                        <span>United Car Removal</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column">
@@ -282,6 +330,16 @@
                                     <img style="object-fit: cover;" src="https://efleetcare.com.au/wp-content/uploads/2021/01/banner1.jpg" alt="Placeholder image">
                                 </figure>
                             </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a href="https://efleetcare.com.au" target="_blank">
+                                    <span class="icon-text">
+                                        <span>Efleet Care</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column">
@@ -291,9 +349,19 @@
                                     <img style="object-fit: cover;" src="https://www.flowercity.com.au/images/products/medium/784e9uvxiu.jpg?time=19:46:13" alt="Placeholder image">
                                 </figure>
                             </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a href="https://www.flowercity.com.au" target="_blank">
+                                    <span class="icon-text">
+                                        <span>Flower City</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
-                    <div class="column">
+                    <!-- <div class="column">
                         <div class="card">
                             <div class="card-image">
                                 <figure class="image is-4by3">
@@ -301,10 +369,10 @@
                                 </figure>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="columns pb-5">
-                    <div class="column">
+                    <!-- <div class="column">
                         <div class="card">
                             <div class="card-image">
                               <figure class="image is-4by3">
@@ -312,7 +380,7 @@
                               </figure>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="column">
                         <div class="card">
                             <div class="card-image">
@@ -320,6 +388,16 @@
                                     <img style="object-fit: cover;" src="https://efleetcare.com.au/wp-content/uploads/2021/01/banner1.jpg" alt="Placeholder image">
                                 </figure>
                             </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a href="https://efleetcare.com.au" target="_blank">
+                                    <span class="icon-text">
+                                        <span>Efleet Care</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column">
@@ -329,6 +407,16 @@
                                     <img style="object-fit: cover;" src="https://www.flowercity.com.au/images/products/medium/784e9uvxiu.jpg?time=19:46:13" alt="Placeholder image">
                                 </figure>
                             </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a href="https://www.flowercity.com.au" target="_blank">
+                                    <span class="icon-text">
+                                        <span>Flower City</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column">
@@ -337,26 +425,40 @@
                                 <figure class="image is-4by3">
                                     <img style="object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0537/3139/3704/files/image_1_1920x.png?v=1665735229" alt="Placeholder image">
                                 </figure>
+                                <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                    <a href="https://www.boozebarrels.com.au" target="_blank">
+                                        <span class="icon-text">
+                                            <span>Booze Barrels</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </span>
+                                        </span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="button is-accent">
+                    <a href="/casestudies.html"><span class="icon"><i class="fas fa-angle-double-right"></i></span>
+                    <span> Explore Now</span></a>
+                </button>
             </div>
         </section>
         <!-- portfolio end -->
 
         <!-- services -->
-        <section class="section pb-6">
+        <section class="section has-text-centered pb-6">
             <div class="container">
                 <div class="column is-7 mx-auto has-text-centered">
                     <span class="tag is-warning is-light">Our Services</span>
                     <h2 class="block title is-2 mt-4">
                        Service we provide
                     </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
+                    <p class="pb-5">Prolific IT Solutions is a contemporary, innovative digital marketing agency with 12 years of experience in carving business-oriented innovative ideas. </p>
                 </div>
                 <div class="columns pb-5">
-                    <div class="column">
+                    <div class="column has-text-left">
                         <div class="card">
                             <div class="card-image">
                               <figure class="image is-4by3">
@@ -365,22 +467,22 @@
                             </div>
                             <header class="card-header pl-2">
                                 <p class="card-header-title">
-                                 Off page optimization
+                                    Social media marketing
                                 </p>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                                    <p>We ensure your brand presence to your targeted audience. Social Media Marketing assists to grab your awesome buying persona and offer your services to them. The most used Social Media platforms for Social Media Marketing in Nepal are Facebook, Instagram, Linkedin, and Snapchat. And, we can assist your business to be at the top.</p>
                                 </div>
                             </div>
                             <footer class="card-footer">
                                 <p class="card-footer-item">
-                                  <span> View More </span>
+                                    <span><a href="/service-detail.html"> View More </a></span>
                                 </p>
                             </footer>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column has-text-left">
                         <div class="card">
                             <div class="card-image">
                               <figure class="image is-4by3">
@@ -389,22 +491,22 @@
                             </div>
                             <header class="card-header pl-2">
                                 <p class="card-header-title">
-                                 Off page optimization
+                                 Search engine optimization
                                 </p>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                                    <p>We are one of the leading SEO consultants in Nepal. We know that every business has unique requirements and they have to face various types of challenges. We aim to deliver a custom SEO solution to lead up to your expectations to meet your needs. We make sure to be on top of the trends that may occur in other Nepal SEO companies.</p>
                                 </div>
                             </div>
                             <footer class="card-footer">
                                 <p class="card-footer-item">
-                                  <span> View More </span>
+                                    <span><a href="/service-detail.html"> View More </a></span>
                                 </p>
                             </footer>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column has-text-left">
                         <div class="card">
                             <div class="card-image">
                               <figure class="image is-4by3">
@@ -413,22 +515,22 @@
                             </div>
                             <header class="card-header pl-2">
                                 <p class="card-header-title">
-                                 Off page optimization
+                                    Content marketing
                                 </p>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                                  <p>We offer a dedicated team of creative writers and creators that can serve your company needs as well as assist you in maintaining your brand in the online world also assistance will render a huge difference to your company by carrying out a cost-effective method of thriving organically and also relieve you of the time-consuming process that it is.</p>
                                 </div>
                             </div>
                             <footer class="card-footer">
                                 <p class="card-footer-item">
-                                  <span> View More </span>
+                                    <span><a href="/service-detail.html"> View More </a></span>
                                 </p>
                             </footer>
                         </div>
                     </div>
-                    <div class="column">
+                    <!-- <div class="column">
                         <div class="card">
                             <div class="card-image">
                               <figure class="image is-4by3">
@@ -437,7 +539,7 @@
                             </div>
                             <header class="card-header pl-2">
                                 <p class="card-header-title">
-                                 Off page optimization
+                                    Online marketing
                                 </p>
                             </header>
                             <div class="card-content">
@@ -451,14 +553,20 @@
                                 </p>
                             </footer>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+                <button class="button is-accent">
+                    <a href="/service.html">
+                        <span class="icon"><i class="fas fa-angle-double-right"></i></span>
+                        <span>View More</span>
+                    </a>
+                </button>
             </div>
         </section>
         <!-- services end-->
 
         <!-- Testimonial -->
-        <section class="section" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
+        <section class="section has-text-centered" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
         background-size: cover;">
             <div class="container">
                 <div class="column is-7 mx-auto has-text-centered">
@@ -466,7 +574,7 @@
                     <h2 class="block title is-2 mt-4">
                         Client testimonial
                     </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
+                    <p class="pb-5"> Our entire team of this IT Company Prolific IT Solutions for your outstanding, passionate and dedicated work in entire solution and services</p>
                 </div>
                 <div class="columns pb-5">
                     <div class="column">
@@ -480,13 +588,13 @@
                                 </figure>
                               </div>
                               <div class="media-content">
-                                <div class="content">
+                                <div class="content has-text-left">
                                   <p>
                                     <strong>John Smith</strong> 
                                     <br>
                                     <small>CEO</small>
                                     <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                    Pleased with the assistance of Prolific Team workers. They have made such difficult work the easiest one as they have the best strategy to deal with all types of website development solutions. They have designed my business site so innovatively that it reached the goal of my business in a very short period. All the credit goes to the Prolific IT Solutions Team.
                                   </p>
                                 </div>
                               </div>
@@ -504,13 +612,13 @@
                                 </figure>
                               </div>
                               <div class="media-content">
-                                <div class="content">
+                                <div class="content has-text-left">
                                   <p>
                                     <strong>John Smith</strong> 
                                     <br>
                                     <small>CEO</small>
                                     <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                    A Great Appreciation to Prolific IT Solution's very helpful, competent team of website designers and developers. They assisted me to design the best ecommerce website that I wanted for my business. The entire team of this IT Company is extremely welcoming as they are still ready to offer free assistance even after the site is up to mark with any questions I have.
                                   </p>
                                 </div>
                               </div>
@@ -528,44 +636,25 @@
                                 </figure>
                               </div>
                               <div class="media-content">
-                                <div class="content">
+                                <div class="content has-text-left">
                                   <p>
                                     <strong>John Smith</strong> 
                                     <br>
                                     <small>CEO</small>
                                     <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                    I spent a lot of money on writers, and SEO specialists and put in several hours of work but I can't find my website anywhere on Google Search Engine Page Results. Thanks to the entire SEO team, Prolific IT Solutions helped me to rank my website on the top pages of Google. Now, my website is ranked on the first page of Google, which drives me a decent amount of traffic every day.
                                   </p>
                                 </div>
                               </div>
                             </article>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>  
+                </div>
+                <button class="button is-accent">
+                    <a href="/testimonial.html"> <span class="icon"><i class="fas fa-angle-double-right"></i></span>
+                        <span>View More</span>
+                    </a>
+                </button>  
             </div>
         </section>
         <!-- testimonail end -->
@@ -586,9 +675,9 @@
                         <div class="tile is-parent is-vertical">
                           <article class="tile is-child p-0 has-background-white-bis">
                             <figure class="image is-2by1">
-                                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1651573090348-4ccf3924ef82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                                <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1651573090348-4ccf3924ef82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
                               </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
+                            <p class="title is-4 pb-2 px-4 pt-4">Digital marketing agency near me</p>
                             <p class="subtitle  px-4">Top tile</p>
                             <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                             <footer class="card-footer">
@@ -597,9 +686,9 @@
                           </article>
                           <article class="tile is-child p-0 has-background-white-bis">
                             <figure class="image is-3by1">
-                                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1660970781103-ba6749cb9ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80">
+                                <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1660970781103-ba6749cb9ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80">
                             </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
+                            <p class="title is-4 pb-2 px-4 pt-4">Social media marketing</p>
                             <p class="subtitle  px-4">Top tile</p>
                             <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                             <footer class="card-footer">
@@ -610,9 +699,9 @@
                         <div class="tile is-parent">
                           <article class="tile is-child has-background-white-bis p-0">
                             <figure class="image is-3by5">
-                              <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1662535800386-271f33a9343a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80">
+                              <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1662535800386-271f33a9343a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80">
                             </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
+                            <p class="title is-4 pb-2 px-4 pt-4">Website analysis</p>
                             <p class="subtitle  px-4">Top tile</p>
                             <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                             <footer class="card-footer">
@@ -624,9 +713,9 @@
                       <div class="tile is-parent">
                         <article class="tile is-child p-0 has-background-white-bis">
                             <figure class="image is-3by1">
-                                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1659141170537-6e0aa70329a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+                                <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1659141170537-6e0aa70329a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
                             </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
+                            <p class="title is-4 pb-2 px-4 pt-4">Aspects of design and branding</p>
                             <p class="subtitle  px-4">Top tile</p>
                             <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                             <footer class="card-footer">
@@ -638,10 +727,10 @@
                     <div class="tile is-parent">
                       <article class="tile is-child p-0 has-background-white-bis">
                         <figure class="image is-1by3">
-                            <img  style="object-fit: cover;" src="https://images.unsplash.com/photo-1567002043261-87c5b0dccb16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+                            <img  style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1567002043261-87c5b0dccb16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
                           </figure>
                         <div class="content">
-                            <p class="title px-4 pt-4">Vertical...</p>
+                            <h4 class="title is-4 pb-2 px-4 pt-4">Google analytics 4</h4>
                             <p class="subtitle  px-4">Top tile</p>
                             <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                             <footer class="card-footer">
@@ -665,21 +754,26 @@
                     </h3>
                     <div class="buttons is-justify-content-center mt-5">
                         <button class="button is-accent">
-                            <span class="icon"><i class="fas fa-phone"></i></span>
-                            <span>Contact Us</span>
+                            <a href="/contact.html">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <span>Contact Us</span>
+                            </a>
                         </button>
 
                         <button class="button is-accent  is-outlined">
-                            <span class="icon"> <i class="fas fa-pen-nib"></i></span>
-                            <span>Get Quote</span>
+                            <a href="/contact.html">
+                                <span class="icon"> <i class="fas fa-pen-nib"></i></span>
+                                <span>Get Quote</span>
+                            </a>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <!-- CTA end -->
+        <!-- CTA end -->
 
+    </main>
+   
     <!-- footer Start -->
     <footer class="footer pt-6  px-0 pb-0 is-2-mobile" style="background-color: #17161a;">
         <div class="container">
