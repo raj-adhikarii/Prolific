@@ -20,6 +20,22 @@
             font-weight: 700;
         }
 
+        a{
+            color: #f98700;
+        }
+        button a{
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        button a:hover{
+            color: #ffffff;
+        }
+
+        /* .clr-accent a{
+            color: #f98700;
+        } */
+
         .button.is-accent {
             background-color: #f98700;
             border-color: transparent;
@@ -46,7 +62,7 @@
 
         p{
             font-family: 'Manrope', sans-serif;
-            font-size: .9rem;
+            line-height: 1.7rem;
         }
 
         span {
@@ -57,6 +73,14 @@
 
         .icon-text span {
             font-size: 16px;
+        }
+
+        .hbr.is-3 {
+            background: #eff3ff;
+            height: 1px;
+            max-width: 580px;
+            border-radius: 30px;
+            margin-top: -10px;
         }
         /*global style end */
         .has-background-accent{
@@ -125,20 +149,22 @@
 
                     <a href="/insights.html" class="navbar-item">Insights</a>
                     <a href="/casestudies.html" class="navbar-item">Case Studies</a>
-                    <a href="/testimonial.html" class="navbar-item">Testimonials</a>
+                    <a href="/faqs.html" class="navbar-item">FAQs</a>
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
                 </div>
         
-            <div class="navbar-end">
-                <div class="navbar-item">
-                <p> <button class="button is-accent">
-                    <span class="icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </span>
-                    <span>Get Quote</span>
-                  </button></p>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                    <p> <button class="button is-accent">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </span>
+                            <span>Get Quote</span>
+                        </a>
+                    </button></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </div>
@@ -162,6 +188,104 @@
             </div>
         </section>
         <!--Breadcrumb end  -->
+
+        <!-- with form section -->
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <img src="/img/contact.svg" alt="">
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Text input">
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                              </span>
+                              <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                            <p class="help is-success">This username is available</p>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                              <span class="icon is-small is-right">
+                                <i class="fas fa-exclamation-triangle"></i>
+                              </span>
+                            </div>
+                            <p class="help is-danger">This email is invalid</p>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                              <div class="select">
+                                <select>
+                                  <option>Select dropdown</option>
+                                  <option>With options</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                              <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <div class="control">
+                              <label class="checkbox">
+                                <input type="checkbox">
+                                I agree to the <a href="#">terms and conditions</a>
+                              </label>
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <div class="control">
+                              <label class="radio">
+                                <input type="radio" name="question">
+                                Yes
+                              </label>
+                              <label class="radio">
+                                <input type="radio" name="question">
+                                No
+                              </label>
+                            </div>
+                          </div>
+                          
+                          <div class="field is-grouped">
+                            <div class="control">
+                              <button class="button is-link">Submit</button>
+                            </div>
+                            <div class="control">
+                              <button class="button is-link is-light">Cancel</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- with form section end -->
 
         <!-- CTA -->
         <section class="section" style="background-image: -webkit-linear-gradient(left,#0042ff 40%,#f98700);">

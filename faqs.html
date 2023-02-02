@@ -20,6 +20,22 @@
             font-weight: 700;
         }
 
+        a{
+            color: #f98700;
+        }
+        button a{
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        button a:hover{
+            color: #ffffff;
+        }
+
+        /* .clr-accent a{
+            color: #f98700;
+        } */
+
         .button.is-accent {
             background-color: #f98700;
             border-color: transparent;
@@ -46,7 +62,7 @@
 
         p{
             font-family: 'Manrope', sans-serif;
-            font-size: .9rem;
+            line-height: 1.7rem;
         }
 
         span {
@@ -58,6 +74,14 @@
         .icon-text span {
             font-size: 16px;
         }
+
+        .hbr.is-3 {
+            background: #eff3ff;
+            height: 1px;
+            max-width: 580px;
+            border-radius: 30px;
+            margin-top: -10px;
+        }
         /*global style end */
         .has-background-accent{
             background-color: #04091d;
@@ -66,6 +90,73 @@
         .has-background-accent-inverse{
             background-color: #f98700;
             border-radius: 0.25rem;
+        }
+        /* faqs */
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        /* Accordion styles */
+        .tabs {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+        }
+
+        .tab {
+            width: 100%;
+            color: white;
+            overflow: hidden;
+        }
+        .tab-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            background: #ff671f;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .tab-label:hover {
+            background: #1a252f;
+        }
+        .tab-label::after {
+            content: "❯";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all 0.35s;
+        }
+        .tab-content {
+            max-height: 0;
+            padding: 0 1em;
+            color: #2c3e50;
+            background: white;
+            transition: all 0.35s;
+        }
+        .tab-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            font-size: 0.75em;
+            background: #2c3e50;
+            cursor: pointer;
+        }
+        .tab-close:hover {
+            background: #1a252f;
+        }
+
+        input:checked + .tab-label {
+            background: #1a252f;
+            border-radius: 3px 3px 0 0;
+        }
+        input:checked + .tab-label::after {
+            transform: rotate(90deg);
+        }
+        input:checked ~ .tab-content {
+            max-height: 100vh;
+            padding: 1em;
         }
     </style>
 </head>
@@ -125,20 +216,22 @@
 
                     <a href="/insights.html" class="navbar-item">Insights</a>
                     <a href="/casestudies.html" class="navbar-item">Case Studies</a>
-                    <a href="/testimonial.html" class="navbar-item">Testimonials</a>
+                    <a href="/faqs.html" class="navbar-item">FAQs</a>
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
                 </div>
         
-            <div class="navbar-end">
-                <div class="navbar-item">
-                <p> <button class="button is-accent">
-                    <span class="icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </span>
-                    <span>Get Quote</span>
-                  </button></p>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                    <p> <button class="button is-accent">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </span>
+                            <span>Get Quote</span>
+                        </a>
+                    </button></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </div>
@@ -150,19 +243,53 @@
             <div class="container">
                 <div class="column is-6 mx-auto has-text-centered">
                     <h2 class="block mt-4 title is-2">
-                        Testimonial
+                        Frequently Asked Questions
                     </h2>
                 </div>
                 <nav class="breadcrumb is-centered mb-5" aria-label="breadcrumbs">
                     <ul>
                       <li><a href="/">Home</a></li>
-                      <li class="is-active"><a href="#" aria-current="page">Testimonial</a></li>
+                      <li class="is-active"><a href="#" aria-current="page">FAQs</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
 
-        <!-- portfolio -->
+        <!-- faqs -->
+        <section class="section">
+            <div class="container">
+                <div class="faqs">
+                    <div class="row">
+                      <div class="col">
+                        <div class="tabs-wrapper">
+                          <div class="tab">
+                            <input type="radio" id="rd1" name="rd">
+                            <label class="tab-label" for="rd1">Item 1</label>
+                            <div class="tab-content">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
+                            </div>
+                          </div>
+                          <hr class="navbar-divider">
+                          <div class="tab">
+                            <input type="radio" id="rd2" name="rd">
+                            <label class="tab-label" for="rd2">Item 2</label>
+                            <div class="tab-content">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+                            </div>
+                          </div>
+                          <hr class="navbar-divider">
+                          <div class="tab">
+                            <input type="radio" id="rd3" name="rd">
+                            <label for="rd3" class="tab-close">Close others &times;</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faqs-end -->
+        <!-- stats -->
         <section class="section">
             <div class="container">
                 <div class="column is-7 mx-auto has-text-centered">
@@ -202,123 +329,10 @@
                 </div>
             </div>
         </section>
-        <!-- portfolio end -->
+        <!-- stats end -->
 
-        <!-- Team -->
-        <section class="section" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
-        background-size: cover;">
-            <div class="container">
-                <div class="column is-7 mx-auto has-text-centered">
-                    <span class="tag is-warning is-light">Our Teams</span>
-                    <h2 class="block title is-2 mt-4">
-                        Valuable Members
-                    </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
-                </div>
-                <div class="columns pb-5">
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-        </section>
-        <!-- testimonail end -->
-
-        <!-- CTA -->
-        <section class="section" style="background-image: -webkit-linear-gradient(left,#0042ff 40%,#f98700);">
+         <!-- CTA -->
+         <section class="section" style="background-image: -webkit-linear-gradient(left,#0042ff 40%,#f98700);">
             <div class="container">
                 <div class="column is-7 mx-auto">
                     <h3 class="block title is-3 has-text-white has-text-centered pb-5">
@@ -327,20 +341,23 @@
                     </h3>
                     <div class="buttons is-justify-content-center mt-5">
                         <button class="button is-accent">
-                            <span class="icon"><i class="fas fa-phone"></i></span>
-                            <span>Contact Us</span>
+                            <a href="/contact.html">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <span>Contact Us</span>
+                            </a>
                         </button>
 
                         <button class="button is-accent  is-outlined">
-                            <span class="icon"> <i class="fas fa-pen-nib"></i></span>
-                            <span>Get Quote</span>
+                            <a href="/contact.html">
+                                <span class="icon"> <i class="fas fa-pen-nib"></i></span>
+                                <span>Get Quote</span>
+                            </a>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <!-- CTA end -->
+        <!-- CTA end -->
 
     <!-- footer Start -->
     <footer class="footer pt-6  px-0 pb-0 is-2-mobile" style="background-color: #17161a;">

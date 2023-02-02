@@ -20,6 +20,22 @@
             font-weight: 700;
         }
 
+        a{
+            color: #f98700;
+        }
+        button a{
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        button a:hover{
+            color: #ffffff;
+        }
+
+        /* .clr-accent a{
+            color: #f98700;
+        } */
+
         .button.is-accent {
             background-color: #f98700;
             border-color: transparent;
@@ -46,7 +62,7 @@
 
         p{
             font-family: 'Manrope', sans-serif;
-            font-size: .9rem;
+            line-height: 1.7rem;
         }
 
         span {
@@ -57,6 +73,14 @@
 
         .icon-text span {
             font-size: 16px;
+        }
+
+        .hbr.is-3 {
+            background: #eff3ff;
+            height: 1px;
+            max-width: 580px;
+            border-radius: 30px;
+            margin-top: -10px;
         }
         /*global style end */
         .has-background-accent{
@@ -125,20 +149,22 @@
 
                     <a href="/insights.html" class="navbar-item">Insights</a>
                     <a href="/casestudies.html" class="navbar-item">Case Studies</a>
-                    <a href="/testimonial.html" class="navbar-item">Testimonials</a>
+                    <a href="/faqs.html" class="navbar-item">FAQs</a>
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
                 </div>
         
-            <div class="navbar-end">
-                <div class="navbar-item">
-                <p> <button class="button is-accent">
-                    <span class="icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </span>
-                    <span>Get Quote</span>
-                  </button></p>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                    <p> <button class="button is-accent">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </span>
+                            <span>Get Quote</span>
+                        </a>
+                    </button></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </div>
@@ -175,73 +201,113 @@
                 </div>
                 <div class="tile is-ancestor pb-5">
                     <div class="tile is-vertical is-8">
-                      <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                          <article class="tile is-child p-0 has-background-white-bis">
-                            <figure class="image is-2by1">
-                                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1651573090348-4ccf3924ef82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
-                              </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
-                            <p class="subtitle  px-4">Top tile</p>
-                            <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Read More</a>
-                            </footer>
-                          </article>
-                          <article class="tile is-child p-0 has-background-white-bis">
-                            <figure class="image is-3by1">
-                                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1660970781103-ba6749cb9ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80">
-                            </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
-                            <p class="subtitle  px-4">Top tile</p>
-                            <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Read More</a>
-                            </footer>
-                          </article>
+                        <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                                <article class="tile is-child p-0 has-background-white-bis">
+                                    <figure class="image is-2by1">
+                                        <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1651573090348-4ccf3924ef82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                                    </figure>
+                                    <p class="title is-4 pb-2 px-4 pt-4">Digital marketing agency near me</p>
+                                    <p class="subtitle  px-4">Top tile</p>
+                                    <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
+
+                                    <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                        <a  href="/service-detail.html">
+                                            <span class="icon-text">
+                                                <span>View More</span>
+                                                    <span class="icon">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
+                                            </span>
+                                        </a>
+                                    </footer>
+                                </article>
+
+                                <article class="tile is-child p-0 has-background-white-bis">
+                                    <figure class="image is-3by1">
+                                        <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1660970781103-ba6749cb9ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80">
+                                    </figure>
+                                    <p class="title is-4 pb-2 px-4 pt-4">Social media marketing</p>
+                                    <p class="subtitle  px-4">Top tile</p>
+                                    <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
+
+                                    <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                        <a  href="/service-detail.html">
+                                            <span class="icon-text">
+                                                <span>View More</span>
+                                                    <span class="icon">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
+                                            </span>
+                                        </a>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="tile is-parent">
+                                <article class="tile is-child has-background-white-bis p-0">
+                                    <figure class="image is-3by5">
+                                    <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1662535800386-271f33a9343a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80">
+                                    </figure>
+                                    <p class="title is-4 pb-2 px-4 pt-4">Website analysis</p>
+                                    <p class="subtitle  px-4">Top tile</p>
+                                    <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
+                                    <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                        <a  href="/service-detail.html">
+                                            <span class="icon-text">
+                                                <span>View More</span>
+                                                    <span class="icon">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
+                                            </span>
+                                        </a>
+                                    </footer>
+                                </article>
+                            </div>
+
                         </div>
+
                         <div class="tile is-parent">
-                          <article class="tile is-child has-background-white-bis p-0">
-                            <figure class="image is-3by5">
-                              <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1662535800386-271f33a9343a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80">
-                            </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
-                            <p class="subtitle  px-4">Top tile</p>
-                            <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Read More</a>
-                            </footer>
-                          </article>
+                            <article class="tile is-child p-0 has-background-white-bis">
+                                <figure class="image is-3by1">
+                                    <img style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1659141170537-6e0aa70329a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+                                </figure>
+                                <p class="title is-4 pb-2 px-4 pt-4">Aspects of design and branding</p>
+                                <p class="subtitle  px-4">Top tile</p>
+                                <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
+                                <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                    <a  href="/service-detail.html">
+                                        <span class="icon-text">
+                                            <span>View More</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </span>
+                                        </span>
+                                    </a>
+                                </footer>
+                            </article>
                         </div>
-                      </div>
-                      <div class="tile is-parent">
-                        <article class="tile is-child p-0 has-background-white-bis">
-                            <figure class="image is-3by1">
-                                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1659141170537-6e0aa70329a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
-                            </figure>
-                            <p class="title px-4 pt-4">Vertical...</p>
-                            <p class="subtitle  px-4">Top tile</p>
-                            <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Read More</a>
-                            </footer>
-                        </article>
-                      </div>
                     </div>
+                    
                     <div class="tile is-parent">
-                      <article class="tile is-child p-0 has-background-white-bis">
-                        <figure class="image is-1by3">
-                            <img  style="object-fit: cover;" src="https://images.unsplash.com/photo-1567002043261-87c5b0dccb16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
-                          </figure>
-                        <div class="content">
-                            <p class="title px-4 pt-4">Vertical...</p>
-                            <p class="subtitle  px-4">Top tile</p>
-                            <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">Read More</a>
-                            </footer>
-                        </div>
-                      </article>
+                        <article class="tile is-child p-0 has-background-white-bis">
+                            <figure class="image is-1by3">
+                                <img  style="object-fit: cover;     border-radius: 6px 6px 0 0;" src="https://images.unsplash.com/photo-1567002043261-87c5b0dccb16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+                            </figure>
+                                <h4 class="title is-4 pb-2 px-4 pt-4">Google analytics 4</h4>
+                                <p class="subtitle  px-4">Top tile</p>
+                                <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
+                                <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                    <a  href="/service-detail.html">
+                                        <span class="icon-text">
+                                            <span>View More</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </span>
+                                        </span>
+                                    </a>
+                                </footer>
+                        </article>
                     </div>
                 </div>    
             </div>
@@ -258,13 +324,17 @@
                     </h3>
                     <div class="buttons is-justify-content-center mt-5">
                         <button class="button is-accent">
-                            <span class="icon"><i class="fas fa-phone"></i></span>
-                            <span>Contact Us</span>
+                            <a href="/contact.html">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <span>Contact Us</span>
+                            </a>
                         </button>
 
                         <button class="button is-accent  is-outlined">
-                            <span class="icon"> <i class="fas fa-pen-nib"></i></span>
-                            <span>Get Quote</span>
+                            <a href="/contact.html">
+                                <span class="icon"> <i class="fas fa-pen-nib"></i></span>
+                                <span>Get Quote</span>
+                            </a>
                         </button>
                     </div>
                 </div>
