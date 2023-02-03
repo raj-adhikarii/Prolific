@@ -23,12 +23,16 @@
         a{
             color: #f98700;
         }
-        button a{
+        .is-accent a{
             color: #ffffff;
             line-height: 1.5rem;
         }
 
-        button a:hover{
+       .clr-accent a {
+            color: #f98700;
+        }
+
+        .clr-accent:hover a{
             color: #ffffff;
         }
 
@@ -91,6 +95,12 @@
             background-color: #f98700;
             border-radius: 0.25rem;
         }
+        /* blog */
+        .pagination-link.is-current {
+            background-color: #f98700;
+            border-color: #f98700;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -147,7 +157,7 @@
                         </div>
                     </div>
 
-                    <a href="/insights.html" class="navbar-item">Insights</a>
+                    <a href="/archive.html" class="navbar-item">Insights</a>
                     <a href="/casestudies.html" class="navbar-item">Case Studies</a>
                     <a href="/faqs.html" class="navbar-item">FAQs</a>
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
@@ -212,7 +222,7 @@
                                     <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
 
                                     <footer class="card-footer portfolio-link is-justify-content-center py-4">
-                                        <a  href="/service-detail.html">
+                                        <a  href="/single.html">
                                             <span class="icon-text">
                                                 <span>View More</span>
                                                     <span class="icon">
@@ -232,7 +242,7 @@
                                     <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
 
                                     <footer class="card-footer portfolio-link is-justify-content-center py-4">
-                                        <a  href="/service-detail.html">
+                                        <a  href="/single.html">
                                             <span class="icon-text">
                                                 <span>View More</span>
                                                     <span class="icon">
@@ -253,7 +263,7 @@
                                     <p class="subtitle  px-4">Top tile</p>
                                     <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                                     <footer class="card-footer portfolio-link is-justify-content-center py-4">
-                                        <a  href="/service-detail.html">
+                                        <a  href="/single.html">
                                             <span class="icon-text">
                                                 <span>View More</span>
                                                     <span class="icon">
@@ -276,7 +286,7 @@
                                 <p class="subtitle  px-4">Top tile</p>
                                 <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                                 <footer class="card-footer portfolio-link is-justify-content-center py-4">
-                                    <a  href="/service-detail.html">
+                                    <a  href="/single.html">
                                         <span class="icon-text">
                                             <span>View More</span>
                                                 <span class="icon">
@@ -298,7 +308,7 @@
                                 <p class="subtitle  px-4">Top tile</p>
                                 <p class="content px-4 pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, odio laborum! Fuga nam, id consectetur iste nobis aspernatur debitis quod? Reprehenderit velit veniam ut eum quidem ab qui delectus. Molestiae?</p>
                                 <footer class="card-footer portfolio-link is-justify-content-center py-4">
-                                    <a  href="/service-detail.html">
+                                    <a  href="/single.html">
                                         <span class="icon-text">
                                             <span>View More</span>
                                                 <span class="icon">
@@ -313,6 +323,22 @@
             </div>
         </section>
         <!-- blog end -->
+
+        <!-- panination -->
+        <nav class=" container mx-auto pagination is-centered pb-6" role="navigation" aria-label="pagination">
+            <a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list">
+              <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+              <li><span class="pagination-ellipsis">&hellip;</span></li>
+              <li><a class="pagination-link" aria-label="Goto page 5">5</a></li>
+              <li><a class="pagination-link is-current" aria-label="Page 6" aria-current="page">6</a></li>
+              <li><a class="pagination-link" aria-label="Goto page 7">7</a></li>
+              <li><span class="pagination-ellipsis">&hellip;</span></li>
+              <li><a class="pagination-link" aria-label="Goto page 8">8</a></li>
+            </ul>
+          </nav>
+        <!-- panination end -->
 
         <!-- CTA -->
         <section class="section" style="background-image: -webkit-linear-gradient(left,#0042ff 40%,#f98700);">
@@ -341,47 +367,58 @@
             </div>
         </section>
         <!-- CTA end -->
+    </main>
 
         <!-- footer Start -->
-        <footer class="footer pt-6  px-0 pb-0 is-2-mobile" style="background-color: #17161a;">
-            <div class="container">
-                <div class="columns pb-3">
-                    <div class="column has-gap">
-                        <p class="title is-5 has-text-white">Menu</p>
-                        <a href="#" class="navbar-item px-0 px-0 has-text-white">Insights</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
-                    </div>
-                    <div class="column">
-                        <p class="title is-5 has-text-white">Menu</p>
-                        <a href="#" class="navbar-item px-0 has-text-white">Insights</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
-                    </div>
-                    <div class="column">
-                        <p class="title is-5 has-text-white">Menu</p>
-                        <a href="#" class="navbar-item px-0 has-text-white">Insights</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
-                    </div>
-                    <div class="column">
-                        <p class="title is-5 has-text-white">Menu</p>
-                        <a href="#" class="navbar-item px-0 has-text-white">Insights</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                        <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
-                    </div>
+    <footer class="footer pt-6  px-0 pb-0 is-2-mobile" style="background-color: #17161a;">
+        <div class="container">
+            <div class="columns pb-3">
+                <div class="column has-gap">
+                   <img src="/img/prolific.png" alt="">
+                    <p class="has-text-white">Prolific IT Solutions Pvt. Ltd. is a leading services provider specializing in the IT sector serving in the field of website design, SMM, SEO in Nepal. </p>
+                </div>
+                <div class="column">
+                    <p class="title is-5 has-text-white">Explore</p>
+                    <a href="/about.html" class="navbar-item px-0 has-text-white">About Us</a>
+                    <a href="/archive.html" class="navbar-item px-0 has-text-white">Insights</a>
+                    <a href="/casestudies.html" class="navbar-item px-0 has-text-white">Case Studies</a>
+                    <a href="/faqs.html" class="navbar-item px-0 has-text-white">FAQs</a>
+                    <a href="/contact.html" class="navbar-item px-0 has-text-white">Contact Us</a>
+                </div>
+                <div class="column">
+                     <p class="title is-5 has-text-white">Services</p>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Social media marketing</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Search engine optimization</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Web design and development</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Content marketing</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Online marketing</a>
+                </div>
+                <div class="column">
+                    <p class="title is-5 has-text-white">Contact us</p>
+                    <p class=" has-text-white">Kathmandu, Nepal</p>
+                    <p class="pt-3 has-text-white"><a class="has-text-white" href="mailto:info@prolificsolution.com">info@prolificsolution.com</a> </p>
+                    <p class="pt-3 has-text-white"><a class="has-text-white" href="tel:+977 984-5294919">984-5294919</a></p>
+
+                        <span class="icon mt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-facebook-square"></i>
+                        </span>
+                        <span class="icon mt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-instagram"></i>
+                        </span>
+                        <span class="icon nt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-linkedin"></i>
+                        </span>
+                        <span class="icon mt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-twitter-square"></i>
+                        </span>     
                 </div>
             </div>
-            <div class="content has-text-centered has-background-black-ter has-text-white py-2">
-            <p>
-                <small>Copyright @2023 | All Rights Reserved.</small>
-            </p>
-            </div>
-        </footer>
-    </main>
+        </div>
+        <div class="content has-text-centered has-background-black-ter has-text-white py-2">
+          <p>
+            <small>© Profolic Solution | All Rights Reserved.</small>
+          </p>
+        </div>
+    </footer>
 </body>
 </html>

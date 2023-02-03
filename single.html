@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prolific Solition | About</title>
+    <title>Prolific Solition</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,22 @@
             font-family: 'Figtree', sans-serif;
             font-weight: 700;
         }
+
+        a{
+            color: #f98700;
+        }
+        button a{
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        button a:hover{
+            color: #ffffff;
+        }
+
+        /* .clr-accent a{
+            color: #f98700;
+        } */
 
         .button.is-accent {
             background-color: #f98700;
@@ -46,7 +62,7 @@
 
         p{
             font-family: 'Manrope', sans-serif;
-            font-size: .9rem;
+            line-height: 1.7rem;
         }
 
         span {
@@ -58,15 +74,15 @@
         .icon-text span {
             font-size: 16px;
         }
-        /*global style end */
-        .has-background-accent{
-            background-color: #04091d;
-        }
 
-        .has-background-accent-inverse{
-            background-color: #f98700;
-            border-radius: 0.25rem;
+        .hbr.is-3 {
+            background: #eff3ff;
+            height: 1px;
+            max-width: 580px;
+            border-radius: 30px;
+            margin-top: -10px;
         }
+  
     </style>
 </head>
 <body>
@@ -87,25 +103,23 @@
         
             <div id="navbar-nav" class="navbar-menu">
                 <div class="navbar-start">
-                    <a href="/" class="navbar-item  is-medium">
+                    <a class="navbar-item  is-medium">
                     Home
                     </a>
             
-                    <a  href="/about.html" class="navbar-item">
+                    <a href="/about.html" class="navbar-item">
                     About Us
                     </a>
             
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a href="/service.html" class="navbar-link">
-                        Services
+                            Services
                         </a>
                 
                         <div class="navbar-dropdown">
-                            <a  href="/service-detail.html" class="navbar-item">
-                            Analytics Services
-                            </a>
+                            <a  href="/service-detail.html" class="navbar-item">Analytics Service</a>
                             <hr class="navbar-divider">
-                            <a href="/service-detail.html" class="navbar-item">
+                            <a class="navbar-item">
                             Off Page Optimization
                             </a>
                             <hr class="navbar-divider">
@@ -123,7 +137,7 @@
                         </div>
                     </div>
 
-                    <a href="/insights.html" class="navbar-item">Insights</a>
+                    <a href="/archive.html" class="navbar-item">Insights</a>
                     <a href="/casestudies.html" class="navbar-item">Case Studies</a>
                     <a href="/faqs.html" class="navbar-item">FAQs</a>
                     <a href="/contact.html" class="navbar-item">Contact Us</a>
@@ -147,389 +161,266 @@
     <!-- nav end -->
 
     <main>
-        <section class="section" style="background-image: url(https://xido-demo.pbminfotech.com/seo/wp-content/uploads/sites/5/2022/07/titlebg-seo.png);
-        background-size: cover;">
+        <section class="section blog-single" style="background-image: url(https://images.unsplash.com/photo-1518665750801-883c188a660d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+        background-size: cover;background-position: center center;">
             <div class="container">
                 <div class="column is-6 mx-auto has-text-centered">
                     <h2 class="block mt-4 title is-2">
-                        Analytics Service
+                        Aspect of design and branding
                     </h2>
                 </div>
                 <nav class="breadcrumb is-centered mb-5" aria-label="breadcrumbs">
                     <ul>
                       <li><a href="/">Home</a></li>
-                      <li><a href="/casestudies.html">Casestudy</a></li>
-                      <li class="is-active"><a href="#" aria-current="page">Case study details</a></li>
+                      <li><a href="/archive.html">Insights</a></li>
+                      <li class="is-active"><a href="#" aria-current="page">Aspect of design and branding</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
 
-        <!-- About -->
         <section class="section">
             <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column">
-                       <img src="/img/about.svg" alt="about">
-                      </div>
-                    <div class="column is-6">
-                        <span class="tag is-warning is-light">About Us</span>
-                        <h2 class="block mt-4 title is-2">
-                            Our Best Work
-                        </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                <div class="column">
+                    <span class="icon-text has-text-info">
+                        <span class="icon">
+                          <i class="fas fa-pen"></i>
+                        </span>
+                        <span>Prolific Solution <time datetime="2023-1-1">11:09 PM - 1 Jan</time></span>
+                      </span>
+                      
+                      <span class="icon-text has-text-success">
+                        <span class="icon">
+                          <i class="fas fa-clock"></i>
+                        </span>
+                        <span>3 min to read</span>
+                      </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- content -->
+        <section class="section pt-0">
+            <div class="container">
+                <div class="columns mx-auto pb-5">
+                    <div class="column is-8">
+                        <article>
+                        <img src="https://images.unsplash.com/photo-1518665750801-883c188a660d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
-
-                        <div class="columns pt-5">
-                            <div class="column is-6">
-                                <div class="column px-0">
-                                    <div class="icon-text is-align-items-center">
-                                        <span class="icon is-large">
-                                            <span class="fa-stack fa-lg">
-                                                <i class="fas fa-spa fa-stack-1x has-background-link-light"></i>
-                                            </span>
-                                          </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
-                                      </div>
-                                  </div>
-                                  <div class="column px-0">
-                                    <div class="icon-text is-align-items-center">
-                                        <span class="icon is-large">
-                                            <span class="fa-stack fa-lg">
-                                              <i class="fas fa-project-diagram fa-stack-1x has-background-info-light"></i>
-                                            </span>
-                                          </span>
-                                        <span>Lorem ipsum dolor adipisicing elit</span>
-                                      </div>
-                                  </div>
-                            </div> 
-                            <div class="column is-6">
-                                <div class="column px-0">
-                                    <div class="icon-text is-align-items-center">
-                                        <span class="icon is-large">
-                                            <span class="fa-stack fa-lg">
-                                              <i class="fas fa-laptop fa-stack-1x has-background-success-light"></i>
-                                            </span>
-                                          </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
-                                      </div>
-                                  </div>
-                                  <div class="column px-0">
-                                    <div class="icon-text is-align-items-center">
-                                        <span class="icon is-large">
-                                            <span class="fa-stack fa-lg">
-                                              <i class="fas fa-tasks fa-stack-1x has-background-warning-light"></i>
-                                            </span>
-                                          </span>
-                                        <span>Lorem ipsum dolor sit amet</span>
-                                      </div>
-                                  </div>
-                            </div> 
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </section>
-        <!-- About end -->
-
-        <!-- About middle dark -->
-        <section class="section has-background-accent">
-            <div class="container">
-                <div class="column is-7 mx-auto has-text-centered">
-                    <span class="tag is-warning is-light">About Us</span>
-                        <h2 class="block mt-4 title is-2 has-text-white">
-                            Our best work
-                        </h2>
-                        <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint qui cumque nihil, labore odit quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quo ipsum modi hic rerum veniam?</p>
-                    <div class="columns mt-5">
-                        <div class="column m-2 py-5 has-background-accent-inverse">
-                            <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
-                            </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
-                        </div>
-                        <div class="column m-2 py-5 has-background-accent-inverse">
-                            <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
-                            </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
-                        </div>
-                        <div class="column m-2 py-5 has-background-accent-inverse">
-                            <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
-                            </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
-                        </div>
-                        <div class="column m-2 py-5 has-background-accent-inverse">
-                            <span class="icon has-background-white b-radius">
-                                <i class="fas fa-home"></i>
-                            </span>
-                            <h3 class="title is-4 mb-4 mt-3 has-text-white">About Us</h3>
-                            <p class="has-text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt</p>
-                        </div>
-                    </div>
-
-                    <div class="columns has-text-left is-vcentered">
-                        <div class="column ">
-                            <h2 class="block mt-4 title is-4 has-text-white">
-                                Our best work Lorem ipsum dolor sit amet
-                            </h2>
-                            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint qui cumque nihil, labore odit quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quo ipsum modi hic rerum veniam?</p>
-                        </div>
-                        <div class="column">
-                            <img src="/img/about-middle.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About middle dark end -->
-
-        <!-- mission start -->
-        <section class="section">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column">
-                        <span class="tag is-warning is-light">Our Mission</span>
-                        <h2 class="block mt-4 title is-2">
-                           Our mission statement
-                        </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                        <p class="mt-4">We, at Prolific IT Solutions, a leading digital marketing company in Nepal, prepare real-time reports, develop close connections with social media, and use new and latest technologies in order to spot opportunities. We aim to reach new audiences by delivering excellent ROI followed by our digital strategies.</p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
-
-                        <div class="icon-text pt-5">
-                            <span class="icon has-text-info">
-                              <i class="fas fa-info-circle"></i>
-                            </span>
-                            <span>Information</span>
-                          </div>
-                          
-                          <p class="block pl-5 pt-3">
-                            Your package will be delivered on <strong>Tuesday at 08:00</strong>.
-                          </p>
-                          
-                          <div class="icon-text">
-                            <span class="icon has-text-success">
-                              <i class="fas fa-check-square"></i>
-                            </span>
-                            <span>Success</span>
-                          </div>
-                          
-                          <p class="block pl-5 pt-3">
-                            Your image has been successfully uploaded.
-                          </p>
-                    </div>
-
-                    <div class="column">
-                        <img src="/img/mission.svg" alt=" mission statement">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- mission end -->
-
-        <!-- vision start -->
-        <section class="section"  style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column">
-                        <img src="/img/vision.svg" alt=" mission statement">
-                    </div>
-
-                    <div class="column">
-                        <span class="tag is-warning is-light">Our Vision</span>
-                        <h2 class="block mt-4 title is-2">
-                           Our vision
-                        </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto ipsam placeat soluta laborum dolore magnam error autem assumenda omnis quam, velit nemo nihil sint nulla similique molestiae dolorem ipsum tempora iste cum, officia iure sequi neque. Vero, aspernatur natus!</p>
+                        <p>With an aim to succeed for a better future, we step forward with campaigns, expertise, all time ready customer support, and ensure we don't leave any stone unturned to reach the goals and come up with newer ideas. We are familiar with all the criteria of a digital marketing company and will not miss a single opportunity to bring it all together into one.</p>
+                    
+                        <img src="/img/seo.svg" alt="">
+                        <p>We, at Prolific IT Solutions, a leading digital marketing company in Nepal, prepare real-time reports, develop close connections with social media, and use new and latest technologies in order to spot opportunities. We aim to reach new audiences by delivering excellent ROI followed by our digital strategies.</p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab mollitia a illum labore dicta debitis molestias inventore ipsam dignissimos, totam, quasi error veritatis nihil eum similique suscipit iste maiores! Quibusdam molestiae error beatae accusamus quas exercitationem, perferendis dicta ullam.</p>
+                        <p>With an aim to succeed for a better future, we step forward with campaigns, expertise, all time ready customer support, and ensure we don't leave any stone unturned to reach the goals and come up with newer ideas. We are familiar with all the criteria of a digital marketing company and will not miss a single opportunity to bring it all together into one.</p>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <p class="title is-3">Recent Posts</p>
+                        <div class="card">
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-left">
+                                  <figure class="image is-48x48">
+                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                  </figure>
+                                </div>
+                                <div class="media-content">
+                                  <p class="title is-4">Digital Marketing</p>
+                                  <p class="subtitle is-6"> <a href="#">#css</a> <a href="#">#responsive</a></p>
+                                </div>
+                              </div>
+                          
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                               
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                              </div>
+                            </div>
+                          </div>
 
-                        <div class="icon-text pt-5">
-                            <span class="icon has-text-info">
-                              <i class="fas fa-info-circle"></i>
-                            </span>
-                            <span>Information</span>
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-left">
+                                  <figure class="image is-48x48">
+                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                  </figure>
+                                </div>
+                                <div class="media-content">
+                                  <p class="title is-4">Design and Branding</p>
+                                  <p class="subtitle is-6"> <a href="#">#css</a> <a href="#">#responsive</a></p>
+                                </div>
+                              </div>
+                          
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                               
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                              </div>
+                            </div>
                           </div>
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-left">
+                                  <figure class="image is-48x48">
+                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                  </figure>
+                                </div>
+                                <div class="media-content">
+                                  <p class="title is-4">Design and Branding</p>
+                                  <p class="subtitle is-6"> <a href="#">#css</a> <a href="#">#responsive</a></p>
+                                </div>
+                              </div>
                           
-                          <p class="block pl-5 pt-3">
-                            Your package will be delivered on <strong>Tuesday at 08:00</strong>.
-                          </p>
-                          
-                          <div class="icon-text">
-                            <span class="icon has-text-success">
-                              <i class="fas fa-check-square"></i>
-                            </span>
-                            <span>Success</span>
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                               
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                              </div>
+                            </div>
                           </div>
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-left">
+                                  <figure class="image is-48x48">
+                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                  </figure>
+                                </div>
+                                <div class="media-content">
+                                  <p class="title is-4">Design and Branding</p>
+                                  <p class="subtitle is-6"> <a href="#">#css</a> <a href="#">#responsive</a></p>
+                                </div>
+                              </div>
                           
-                          <p class="block pl-5 pt-3">
-                            Your image has been successfully uploaded.
-                          </p>
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                               
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ads">
+                            <img src="https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+                          </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Vission emd -->
-        <!-- portfolio -->
-        <section class="section">
-            <div class="container">
-                <div class="column is-7 mx-auto has-text-centered">
-                    <span class="tag is-warning is-light">Portfolio</span>
-                    <h2 class="block mt-4 title is-2">
-                        Our best work
-                    </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
-                </div>
-                <div class="col pb-4">
-                    <nav class="level">
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <p class="title">12+</p>
-                                <p class="heading mt-5">Service Provide</p>
-                            </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <p class="title">200+</p>
-                                <p class="heading mt-5">Our clients</p>
-                            </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <p class="title">200+</p>
-                                <p class="heading mt-5">Happy client</p>
-                            </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <p class="title">6,456+</p>
-                                <p class="heading mt-5">Hours of works</p>
-                          </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </section>
-        <!-- portfolio end -->
 
-        <!-- Team -->
-        <section class="section" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
+        <!-- related post -->
+        <section class="section has-text-centered pb-6" class="section has-text-centered" style="background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
         background-size: cover;">
             <div class="container">
                 <div class="column is-7 mx-auto has-text-centered">
-                    <span class="tag is-warning is-light">Our Teams</span>
-                    <h2 class="block title is-2 mt-4">
-                        Valuable Members
+                    <h2 class="block title is-2 mt-4 pb-4">
+                       Related Post
                     </h2>
-                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas earum eum eius, doloribus doloremque quam molestiae libero iure aut.</p>
                 </div>
                 <div class="columns pb-5">
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
+                    <div class="column has-text-left">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="/img/seo.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <header class="card-header pl-2">
+                                <p class="card-header-title">
+                                    Social media marketing
+                                </p>
+                            </header>
+                            <div class="card-content">
                                 <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
+                                    <p>We ensure your brand presence to your targeted audience. Social Media Marketing assists to grab your awesome buying persona and offer your services to them. The most used Social Media platforms for Social Media Marketing in Nepal are Facebook, Instagram, Linkedin, and Snapchat. And, we can assist your business to be at the top.</p>
                                 </div>
-                              </div>
-                            </article>
+                            </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a  href="/service-detail.html">
+                                    <span class="icon-text">
+                                        <span>View More</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
+                    <div class="column has-text-left">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="/img/conversion.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <header class="card-header pl-2">
+                                <p class="card-header-title">
+                                 Search engine optimization
+                                </p>
+                            </header>
+                            <div class="card-content">
                                 <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
+                                    <p>We are one of the leading SEO consultants in Nepal. We know that every business has unique requirements and they have to face various types of challenges. We aim to deliver a custom SEO solution to lead up to your expectations to meet your needs. We make sure to be on top of the trends that may occur in other Nepal SEO companies.</p>
                                 </div>
-                              </div>
-                            </article>
+                            </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a  href="/service-detail.html">
+                                    <span class="icon-text">
+                                        <span>View More</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
+                    <div class="column has-text-left">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="/img/conv.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <header class="card-header pl-2">
+                                <p class="card-header-title">
+                                    Content marketing
+                                </p>
+                            </header>
+                            <div class="card-content">
                                 <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
+                                  <p>We offer a dedicated team of creative writers and creators that can serve your company needs as well as assist you in maintaining your brand in the online world also assistance will render a huge difference to your company by carrying out a cost-effective method of thriving organically and also relieve you of the time-consuming process that it is.</p>
                                 </div>
-                              </div>
-                            </article>
+                            </div>
+                            <footer class="card-footer portfolio-link is-justify-content-center py-4">
+                                <a  href="/service-detail.html">
+                                    <span class="icon-text">
+                                        <span>View More</span>
+                                            <span class="icon">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                    </span>
+                                </a>
+                            </footer>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-64x64">
-                                  <img style="height: 100%;
-                                  object-fit: cover;
-                                  border-radius: 120px;" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Image">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>John Smith</strong> 
-                                    <br>
-                                    <small>CEO</small>
-                                    <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>  
+                </div>
             </div>
         </section>
-        <!-- testimonail end -->
+        <!-- related post end-->
 
         <!-- CTA -->
         <section class="section" style="background-image: -webkit-linear-gradient(left,#0042ff 40%,#f98700);">
@@ -561,38 +452,49 @@
         <div class="container">
             <div class="columns pb-3">
                 <div class="column has-gap">
-                    <p class="title is-5 has-text-white">Menu</p>
-                    <a href="#" class="navbar-item px-0 px-0 has-text-white">Insights</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
+                   <img src="/img/prolific.png" alt="">
+                    <p class="has-text-white">Prolific IT Solutions Pvt. Ltd. is a leading services provider specializing in the IT sector serving in the field of website design, SMM, SEO in Nepal. </p>
                 </div>
                 <div class="column">
-                    <p class="title is-5 has-text-white">Menu</p>
-                    <a href="#" class="navbar-item px-0 has-text-white">Insights</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
+                    <p class="title is-5 has-text-white">Explore</p>
+                    <a href="/about.html" class="navbar-item px-0 has-text-white">About Us</a>
+                    <a href="/archive.html" class="navbar-item px-0 has-text-white">Insights</a>
+                    <a href="/casestudies.html" class="navbar-item px-0 has-text-white">Case Studies</a>
+                    <a href="/faqs.html" class="navbar-item px-0 has-text-white">FAQs</a>
+                    <a href="/contact.html" class="navbar-item px-0 has-text-white">Contact Us</a>
                 </div>
                 <div class="column">
-                     <p class="title is-5 has-text-white">Menu</p>
-                    <a href="#" class="navbar-item px-0 has-text-white">Insights</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
+                     <p class="title is-5 has-text-white">Services</p>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Social media marketing</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Search engine optimization</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Web design and development</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Content marketing</a>
+                    <a href="/service-detail.html" class="navbar-item px-0 has-text-white">Online marketing</a>
                 </div>
                 <div class="column">
-                     <p class="title is-5 has-text-white">Menu</p>
-                    <a href="#" class="navbar-item px-0 has-text-white">Insights</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Case Studies</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Testimonials</a>
-                    <a href="#" class="navbar-item px-0 has-text-white">Contact Us</a>
+                    <p class="title is-5 has-text-white">Contact us</p>
+                    <p class=" has-text-white">Kathmandu, Nepal</p>
+                    <p class="pt-3 has-text-white"><a class="has-text-white" href="mailto:info@prolificsolution.com">info@prolificsolution.com</a> </p>
+                    <p class="pt-3 has-text-white"><a class="has-text-white" href="tel:+977 984-5294919">984-5294919</a></p>
+
+                        <span class="icon mt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-facebook-square"></i>
+                        </span>
+                        <span class="icon mt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-instagram"></i>
+                        </span>
+                        <span class="icon nt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-linkedin"></i>
+                        </span>
+                        <span class="icon mt-5 has-text-white mx-1">
+                            <i class="fab fa-2x fa-twitter-square"></i>
+                        </span>     
                 </div>
             </div>
         </div>
         <div class="content has-text-centered has-background-black-ter has-text-white py-2">
           <p>
-            <small>Copyright @2023 | All Rights Reserved.</small>
+            <small>© Profolic Solution | All Rights Reserved.</small>
           </p>
         </div>
     </footer>
