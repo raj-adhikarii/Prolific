@@ -1,7 +1,297 @@
-@import 'bulma/css/bulma.css'
+/* global css */
+.title{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+}
 
+a{
+    color: #f98700;
+}
 
-/* header */
-/* img{
-    filter: saturate(100000%) sepia(1000%) hue-rotate(200deg) invert(100%);
-} */
+p{
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.7rem;
+}
+
+span {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.icon-text span {
+    font-size: 16px;
+}
+
+.is-white a {
+    color: #fff;
+}
+
+.clr-accent a {
+    color: #f98700;
+}
+
+.clr-accent:hover a{
+    color: #ffffff;
+}
+
+.mw-768 {
+    max-width: 768px;
+    margin: 0 auto;
+}
+/* global css end */
+
+/* nav */
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover{
+    background-color: #fafafa;
+    color: #f98700;
+}
+.navbar-link:not(.is-arrowless)::after{
+    border-color: #f98700;
+}
+.navbar-brand .navbar-item img{
+    max-height: 4rem;
+}
+
+.navbar-brand, .navbar-tabs{
+    align-items: center;
+}
+
+/* mav css end */
+
+/* btn css */
+.button.is-accent {
+    background-color: #f98700;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-accent.is-hovered, .button.is-accent:hover {
+    background-color: #e17a01;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-accent.is-outlined {
+    background-color: white;
+    border-color: #ffffff;
+    color: #f98700;
+}
+
+.button.is-accent.is-outlined.is-focused, .button.is-accent.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-accent.is-outlined:hover {
+    background-color: #f98700;
+    border-color: #e17a01;
+    color: #fff;
+}
+/* btn css end */
+
+/* home page css */
+.bg-primary{
+    background: linear-gradient(90deg, rgba(0,19,187,0.11528361344537819) 29%, rgba(255,141,0,0.3253676470588235) 100%);
+}
+
+.logo-section{
+    max-width: 600px;
+}
+
+.hbr.is-3 {
+    background: #eff3ff;
+    height: 1px;
+    max-width: 580px;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.section-reverse{
+    background-image: url(https://useltech.com/wp-content/uploads/2021/01/slider-02.png);
+    background-size: cover;
+}
+
+.cta{
+    background-image: -webkit-linear-gradient(left,#0042ff 40%,#f98700);
+}
+/* home page css end*/
+
+/* breadcrumbs */
+.breadcrumbs{
+    background-image: url(https://xido-demo.pbminfotech.com/seo/wp-content/uploads/sites/5/2022/07/titlebg-seo.png);
+    background-size: cover;
+}
+
+.breadcrumb a{
+    color: #f98700;
+}
+/* breadcrumbs end */
+
+/* about page css */
+.b-radius{
+    padding: 10px; 
+    border-radius: 6px;
+    height:3.5rem;
+    width:3.5rem;
+}
+
+.has-background-accent {
+    background-color: #04091d;
+}
+
+.has-background-accent-inverse {
+    background-color: #f98700;
+    border-radius: 0.25rem;
+}
+/* about page css end */
+
+/* blog css */
+.pagination-link.is-current {
+    background-color: #f98700;
+    border-color: #f98700;
+    color: #fff;
+}
+/* blog css end */
+
+/* blog single */
+.blog-single{
+    background-image: url(https://images.unsplash.com/photo-1518665750801-883c188a660d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    background-size: cover;background-position: center center;
+}
+/* blog single end */
+
+/* casestudy css*/
+.a-inverted {
+    background: none;
+    border: none;
+    color: #f98700;
+    cursor: pointer;
+}
+/* casestudy css end*/
+
+ /* faqs */
+ input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+.tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #ff671f;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tab-label:hover {
+    background: #1a252f;
+}
+.tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+}
+.tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+.tab-close:hover {
+    background: #1a252f;
+}
+
+input:checked + .tab-label {
+    background: #1a252f;
+    border-radius: 3px 3px 0 0;
+}
+input:checked + .tab-label::after {
+    transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+/* faqs css end */
+
+/* footer */
+footer.footer{
+    background-color: #17161a;
+}
+
+footer a.navbar-item:hover{
+    background-color: transparent;
+}
+
+.d-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.d-flex a:hover{
+    background-color: transparent;
+}
+/* footer end */
+
+/* media query */
+@media(max-width:768px){
+    .logo-section{
+        display: flex;
+    }
+
+    .logo-section img{
+        max-width: 90px;
+    }
+
+    .md-flex{
+        display: flex;
+    }
+
+    .section-reverse .columns {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column img {
+        width: 500px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+@media(max-width:640px){
+    .logo-section{
+        display: block;
+    }
+    .logo-section img{
+        max-width: 150px;
+    }
+
+    .md-flex{
+        display: block;
+    }
+
+    .d-flex {
+        justify-content: start;
+    }
+}
